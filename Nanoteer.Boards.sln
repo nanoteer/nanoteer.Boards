@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "Nanoteer.Boards.GHI.Cerberus", "src\Boards.GHI.Cerberus\Nanoteer.Boards.GHI.Cerberus.nfproj", "{03722873-A4E9-4796-9A43-E83A6BD0AC7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03722873-A4E9-4796-9A43-E83A6BD0AC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03722873-A4E9-4796-9A43-E83A6BD0AC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03722873-A4E9-4796-9A43-E83A6BD0AC7C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{03722873-A4E9-4796-9A43-E83A6BD0AC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03722873-A4E9-4796-9A43-E83A6BD0AC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03722873-A4E9-4796-9A43-E83A6BD0AC7C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {696E514D-3265-420A-831B-7671B80AA634}
+	EndGlobalSection
+EndGlobal
