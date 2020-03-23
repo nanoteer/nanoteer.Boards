@@ -21,7 +21,7 @@ namespace Nanoteer.Boards.GHI
             Socket socket;
 
             #region Socket 2
-            socket = new Socket(2, SocketType.Y);
+            socket = new Socket(2, SocketType.A | SocketType.U | SocketType.Y);
             socket.SocketPins[3] = CerberusPin.PA6;
             socket.SocketPins[4] = CerberusPin.PA2;
             socket.SocketPins[5] = CerberusPin.PA3;
@@ -30,11 +30,19 @@ namespace Nanoteer.Boards.GHI
             socket.SocketPins[8] = CerberusPin.PB7;
             socket.SocketPins[9] = CerberusPin.PB6;
 
+            // SocketType.A
+            socket.AnalogChannels[0] = 0;
+            socket.AnalogChannels[1] = 1;
+            socket.AnalogChannels[2] = 2;
+
+            // SocketType.U
+            socket.SerialPortName = "COM2";
+
             SocketHelper.RegisterSocket(socket);
             #endregion Socket 2
 
             #region Socket 3
-            socket = new Socket(3, SocketType.Y);
+            socket = new Socket(3, SocketType.A | SocketType.Y);
             socket.SocketPins[3] = CerberusPin.PC0;
             socket.SocketPins[4] = CerberusPin.PC1;
             socket.SocketPins[5] = CerberusPin.PA4;
@@ -42,6 +50,11 @@ namespace Nanoteer.Boards.GHI
             socket.SocketPins[7] = CerberusPin.PC6;
             socket.SocketPins[8] = CerberusPin.PA7;
             socket.SocketPins[9] = CerberusPin.PC7;
+            
+            // SocketType.A
+            socket.AnalogChannels[0] = 3;
+            socket.AnalogChannels[1] = 4;
+            socket.AnalogChannels[2] = 5;
 
             SocketHelper.RegisterSocket(socket);
             #endregion Socket 3
@@ -58,6 +71,35 @@ namespace Nanoteer.Boards.GHI
 
             SocketHelper.RegisterSocket(socket);
             #endregion Socket 4
+
+            #region Socket 5
+            socket = new Socket(5, SocketType.X);
+            socket.SocketPins[3] = CerberusPin.PC14;
+            socket.SocketPins[4] = CerberusPin.PB9;
+            socket.SocketPins[5] = CerberusPin.PB8;
+            socket.SocketPins[6] = CerberusPin.PC15;
+            socket.SocketPins[7] = CerberusPin.PB5;
+            socket.SocketPins[8] = CerberusPin.PB4;
+            socket.SocketPins[9] = CerberusPin.PB3;
+
+            SocketHelper.RegisterSocket(socket);
+            #endregion Socket 5
+
+            #region Socket 6
+            socket = new Socket(6, SocketType.U | SocketType.X);
+            socket.SocketPins[3] = CerberusPin.PA14;
+            socket.SocketPins[4] = CerberusPin.PB10;
+            socket.SocketPins[5] = CerberusPin.PB11;
+            socket.SocketPins[6] = CerberusPin.PA13;
+            socket.SocketPins[7] = CerberusPin.PB5;
+            socket.SocketPins[8] = CerberusPin.PB4;
+            socket.SocketPins[9] = CerberusPin.PB3;
+
+            // SocketType.U
+            socket.SerialPortName = "COM3";
+
+            SocketHelper.RegisterSocket(socket);
+            #endregion Socket 6
 
             #region Socket 7
             socket = new Socket(7, SocketType.Y);
